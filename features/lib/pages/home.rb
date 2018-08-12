@@ -13,4 +13,8 @@ class Home
     click_link('Challenging DOM')
   end
 
+  def click_dynamic_loading
+    click_link('Dynamic Loading')
+  end
+
 end

@@ -1,4 +1,4 @@
-Feature: Home
+Feature: Challenging DOM tests
 
   Scenario: The red button label should change after it has been clicked
     Given I reach the internet page

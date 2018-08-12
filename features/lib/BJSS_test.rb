@@ -13,4 +13,8 @@ class BJSS_Test
     Challenging_DOM.new
   end
 
+  def dynamic_loading
+    Dynamic_Loading.new
+  end
+
 end
