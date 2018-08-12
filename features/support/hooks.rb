@@ -1,3 +1,3 @@
 Before do
-  @challenging_DOM = Challenging_DOM.new
+  @driver = BJSS_Test.new
 end

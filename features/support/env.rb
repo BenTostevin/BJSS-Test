@@ -1,6 +1,6 @@
 require 'capybara/cucumber'
 require 'rspec'
-require_relative '../lib/challenging_DOM.rb'
+require_relative '../lib/BJSS_test.rb'
 
 Capybara.register_driver :chrome do |app|
   Capybara::Selenium::Driver.new(app, :browser => :chrome)
