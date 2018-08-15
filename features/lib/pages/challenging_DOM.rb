@@ -3,16 +3,16 @@ require 'capybara/dsl'
 class Challenging_DOM
   include Capybara::DSL
 
+  # Constants
+  RED_BUTTON_CLASS = '.alert'
 
   def click_red_button
-    find('.alert').click
-    # find_element(:id, 'dropdown_7')
-    # click_button('565c3eb0-80a3-0136-54be-32b0739a0e10')
+    find(RED_BUTTON_CLASS).click
     sleep 2
   end
 
   def read_red_button
-    find('.alert').text
+    find(RED_BUTTON_CLASS).text
   end
 
 end

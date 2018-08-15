@@ -7,8 +7,6 @@ Capybara.register_driver :chrome do |app|
 end
 
 Capybara.configure do |config|
-  # config.ignore_hidden_elements = false #ensure all hidden elements on the page are available
   config.default_max_wait_time = 10 #Wait time for asynchronous processes to finish
-  # config.match = :prefer_exact
   config.default_driver = :chrome #ensure the default driver is chrome
 end

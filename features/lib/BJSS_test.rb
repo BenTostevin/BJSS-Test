@@ -4,7 +4,6 @@ require_relative './pages/challenging_DOM.rb'
 require_relative './pages/dynamic_loading.rb'
 require_relative './pages/employees.rb'
 
-
 class BJSS_Test
 
   def home

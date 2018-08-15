@@ -6,6 +6,7 @@ class Employees
   include Capybara::DSL
 
   def post(name, salary, age)
+    # Post employee data to API
     result = HTTParty.post('http://dummy.restapiexample.com/api/v1/create',
         :body =>  { :name => name,
                     :salary => salary,
@@ -20,8 +21,8 @@ class Employees
   end
 
   def check_details(name, salary, age)
+    # Check that the same details that were posted are now shown in the API
     page.has_content?(`"employee_name":"#{name}","employee_salary":"#{salary}","employee_age":"#{age}"`)
   end
-
 
 end
