@@ -1,5 +1,6 @@
 Feature: Challenging DOM tests
 
+  @test1
   Scenario: The red button label should change after it has been clicked
     Given I reach the internet page
     And I click challenging DOM

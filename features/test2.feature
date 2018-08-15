@@ -1,5 +1,6 @@
 Feature: Dynamic laoding page tests
 
+  @test2
   Scenario: Confirm hello world is printed after the loading bar disapears
     Given I reach the internet page
     And I click dynamic loading
