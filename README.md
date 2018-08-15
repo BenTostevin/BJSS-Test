@@ -12,7 +12,7 @@ Deliver a working test framework that aims towards "best practices".
 ### Test 2
 - Navigate to https://the-internet.herokuapp.com/
 - Click 'Dynamically Loaded Page Elements' and click 'Example 2' rendered after the fact.
-- Confirm 'Hello World!' is rendered after the loading bar dissapears.
+- Confirm 'Hello World!' is rendered after the loading bar disappears.
 
 ### Test 3
 - Post to the http://dummy.restapiexample.com/
@@ -49,14 +49,14 @@ The text inside the red button after the button has been clicked is compared wit
 ### Test 2 - Dynamic Loading
 For the second test, once the 'Dynamic Loading' page has been reached, the start button is clicked. Then the presence of the loading bar is tested.
 
-The loading bar should only appear temporarily, so 'sleep' is used to wait a short while. After the wait, the presense of the loading bar is checked again.
+The loading bar should only appear temporarily, so 'sleep' is used to wait a short while. After the wait, the presence of the loading bar is checked again.
 
-I manually evaluated how long the loading bar is present for and added a sleep length correspondingly. If there were a similar situation where 'sleep' should not be used, a function containing a while loop which cycles for an amount of time until either the loading bar disappears or too much time has passed could be used, such as the following written in psuedo-code:
+I manually evaluated how long the loading bar is present for and added a sleep length correspondingly. If there were a similar situation where 'sleep' should not be used, a function containing a while loop which cycles for an amount of time until either the loading bar disappears or too much time has passed could be used, such as the following written in pseudo-code:
 
 ```
 timer = 0
 while (loading bar is present) or (timer < 30)
-	if (loading bar is prenent)
+	if (loading bar is present)
 		timer ++
 	end
 	else if (loading bar is not present)
@@ -66,11 +66,11 @@ while (loading bar is present) or (timer < 30)
 end
 ```
 
-I chose not to use this method because I decided that it was unnessicarily complicated for the task at hand.
+I chose not to use this method because I decided that it was unnecessarily complicated for the task at hand.
 
 ### Test 3 - Posting to API
 In contrast to the first two feature files, a Scenario Outline was used as opposed to a Scenario for this test. With a scenario outline, many scenarios with many different sets of input data can be used. Each set of input data can be entered in the Examples table in the feature file.
 
 The first step definition takes the input data from the Examples table and uses it in the 'post' function in the `employees.rb` file in the pages folder. This function converts a ruby hash to json and parse it to the API.
 
-Once the employee data page has been reached, the 'check_details' function checks that the same input data is now dispalyed on the page.
+Once the employee data page has been reached, the 'check_details' function checks that the same input data is now displayed on the page.
